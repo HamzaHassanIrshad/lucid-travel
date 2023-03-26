@@ -1,0 +1,164 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="icon" type="image/png" href="../Images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Lexend+Zetta&family=Merriweather:ital,wght@0,300;0,900;1,900&family=Righteous&family=Rowdies&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css"> 
+  <style>
+    body {
+    padding: 0;
+    margin: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/unawatuna.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  </style>  
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <h1>LUCID TRAVEL</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="MainPage.html"><i class="fas fa-home">Home</i></a></li>
+        <li><a href="store.html"><i class="fas fa-tshirt">Products</i></a></li>
+        <li><a href="quiz.html"><i class="fas fa-child">Quiz</a></i></li>
+        <li><a href="gallery.html"><i class="fas fa-image">Gallery</i></a></li>
+        <li><a href="feedback.html">Feedback</i></a></li> 
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="about_us.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="prview">
+      <!-- <img id="preview" src="https://picsum.photos/300/300?random=1" alt="preview" /> -->
+      <div id="preview-img" class="preview-img" style="background: url('../Images/Ella.jpeg')" alt="preview');"></div>
+      <p id="description" style="margin-top: 20px; font-size: larger;">
+        Ella is a small town in the Badulla District of Uva Province, Sri Lanka governed by an Urban Council. It is approximately 200 kilometres east of Colombo and is situated at an elevation of 1,041 metres above sea level. Laid-back Ella draws travelers to Sri Lanka's highlands with its mountain forests, tea plantations, and relatively cool climate. The wildlife-rich region is also home to caves, cascades, and secluded temples.
+        There are many places to explore in Ella. Nine Arch Bridge , Little Adams's Peak , Hike up to Ella Rock , exploring Diyaluma Falls are some of the eye catching destinations.
+      </p>
+    </div>
+    <div class="img-list">
+      <img class="img" src="../Images/Ella.jpeg" onmouseover="imgOnMouseOver(this)"
+        style="margin-top: 20px; font-size: larger" data-description="Ella is a small town in the Badulla District of Uva Province, Sri Lanka governed by an Urban Council. It is approximately 200 kilometres east of Colombo and is situated at an elevation of 1,041 metres above sea level.Laid-back Ella draws travelers to Sri Lanka's highlands with its mountain forests, tea plantations, and relatively cool climate. The wildlife-rich region is also home to caves, cascades, and secluded temples.
+        There are many places to explore in Ella. Nine Arch Bridge , Little Adams's Peak , Hike up to Ella Rock , exploring Diyaluma Falls are some of the eye catching destinations.   " />
+      <img class="img" src="../Images/jaffna.jpeg" onmouseover="imgOnMouseOver(this)"
+        style="margin-top: 20px; font-size: larger" data-description="Jaffna is the capital of the Jaffna district, and is located on the northernmost peninsula of Sri Lanka.Jaffna is a city that has been vastly developed after the 30 year civil war with rennovation of the the Universities , public libraries and many more facilities. It is a very attractive toursit destination with historic sites like the harbour and temples. It's also famous for the war memorials that has been built.
+        Nallur Temple , Jaffna Fort , Kandarodei Temple , Dambakola Patuna are some popular sites that you should visit. " />
+      <img class="img" src="../Images/kandy.jpeg" onmouseover="imgOnMouseOver(this)"
+        style="margin-top: 20px; font-size: larger" data-description="Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest. The city's heart is scenic Kandy Lake (Bogambara Lake), which is popular for strolling. Kandy is famed for sacred Buddhist sites, including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession. Kandy's Streets is a place to have a walk with cultural shops all over." />
+      <img class="img" src="../Images/gallefort.jpeg" onmouseover="imgOnMouseOver(this)"
+        style="margin-top: 20px; font-size: larger" data-description="Galle  is located at the extreme southwest corner of the island, in the southwest coast of Sri Lanka, where the shoreline turns east towards Matara and Tangalle. The fort, like most of the forts in Sri Lanka, is built on a small rocky peninsula, belonging to the sea as much as to the land.It was built by the Portugese. " />
+      <img class="img" src="../Images/sigiriya.jpg" onmouseover="imgOnMouseOver(this)"
+        style="margin-top: 20px; font-size: larger" data-description="Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. The name refers to a site of historical and archaeological significance that is dominated by a massive column of rock nearly 200 metres high.It is one of the best preserved examples of ancient urban planning.
+        It is also referred by locals as the Eighth Wonder of the World this ancient palace and fortress complex has significant archaeological importance and attracts thousands of tourists every year." />
+      <img class="img" src="../Images/mirissasunset.jpg" onmouseover="imgOnMouseOver(this)"
+        style="margin-top: 20px; font-size: larger" data-description="Mirissa is a small town on the south coast of Sri Lanka, located in the Matara District of the Southern Province. It is approximately 150 kilometres south of Colombo and is situated at an elevation of 4 metres above sea level. Mirissa's beach and nightlife make it a popular tourist destination.
+        Mirissa is one of the main beach destinations in southern Sri Lanka. The area has it all, beautiful Sri Lankan beaches, surf waves, whale watching, and great bars and restaurants. Mirissa is developing quickly over the last couple of years so it’s also getting more crowded. There are still enough spots where you can enjoy a fresh coconut from your hammock seeing the sunset." />
+      </div>
+    <div class="form">
+      <form action="">
+        <label for="bg-color">Background colour</label>
+        <select name="bg-color" id="bg-color" onchange="chnageBgColor(this)">
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+        </select>
+        <label for="txt-color">Text colour</label>
+        <select name="txt-color" id="txt-color" onchange="chnageTxtColor(this)">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="red">Red</option>
+        </select>
+      </form>
+    </div>
+    <!--Footer Start-->
+		<div class="footer">
+      <div class="footer-content">
+      <div class="footer-section abt">
+          <div class="logo">
+    <h1 style="text-align: center;" id="footer-head">LUCID TRAVEL</h1> 
+  </div>
+  
+          <p id="footer-text">Copyright © 2020 Digital AG,<br> All rights reserved.<br>
+          DNHL® is a trademark owned by a Group with its headquarters at 
+  Mill Street, Colombo, SE1 2BA, Sri Lanka. This site is owned by DNHL.
+  </p>
+      </div>
+      <div class="footer-section links">
+          <h4>Quick Links</h4>
+
+          <ul>
+              <a class="flinks" href="MainPage.html"><li>Home</li></a>
+              <a class="flinks" href="store.html"><li>Products</li></a>
+              <a class="flinks" href="quiz.html"><li>Quiz</li></a>
+              <a class="flinks" href="gallery.html"><li>Gallery</li></a>
+          </ul>
+      </div>
+      <div class="footer-section links">
+          <h4>More</h4>
+          <ul>
+    <a class="flinks" href="about_us.html"><li>About us</li></a>
+              <a class="flinks" href="feedback.html"><li>Feedback</li></a>
+              <a class="flinks" href="sitemap.html"><li>Site Map</li></a>
+          </ul>
+      </div>
+      <div class="footer-section links">
+          <h4>Our Socials</h4>
+
+          <ul>
+              <a class="flinks" href="https://www.facebook.com/"><li><i class="fab fa-facebook-square"> Facebook</i></li></a>
+              <a class="flinks" href="https://www.instagram.com/"><li><i class="fab fa-instagram"> Instagram</i></li></a>
+              <a class="flinks" href="https://www.youtube.com/"><li><i class="fab fa-youtube"> YouTube</i></li></a>
+              <a class="flinks" href="https://twitter.com/"><li><i class="fab fa-twitter"> Twitter</i></li></a>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p id="footer-bottom-text">&copy; Lucid Travel.lk | Page Edited by<span id="page-editor" onclick="openNav()"> Lashan Mendis</span></p>
+  </div>
+ </div>
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+<img src="../Images/s4_lashan.jpeg" alt="Lashan Mendis"><br>
+<h1 id="page-editor-name">Lashan Mendis</h1><br>
+<p id="page-editor-details"><b>Student No 4<br>
+IIT ID: 2019638<br>
+UoW ID: w1790149</b></p>
+</div>
+</div>
+<!--Footer End-->
+
+
+  <script src="https://kit.fontawesome.com/fd54030622.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function imgOnMouseOver(img) {
+      document.getElementById("preview-img").style.background = "url("+img.src+")";
+      document.getElementById("description").innerText = img.getAttribute(
+        "data-description"
+      );
+    }
+    function chnageBgColor(bg) {
+      document.body.style.background = bg.value;
+    }
+    function chnageTxtColor(txt) {
+      document.body.style.color = txt.value;
+    }
+    function openNav() {
+		  document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+		  document.getElementById("myNav").style.width = "0%";
+		}
+  </script>
+  <a href="#"><button class="floating-btn1">Back to top  <i class="fas fa-angle-up"></i></button></a>
+</body>
+
+</html>

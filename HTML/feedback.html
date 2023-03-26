@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/fd54030622.js" crossorigin="anonymous"></script>
+	<meta  name="viewport"  content="width=device-width,  initial-scale=1.0">
+	<link rel= "stylesheet" href="../CSS/feedback.css">
+	<link rel="icon" type="image/png" href="../Images/favicon.ico">
+	<title>Feedback</title>
+</head>
+<body>
+	<header>
+	<div class="m">
+		<nav>
+		<div class="logo">
+			<h1>LUCID TRAVEL</h1> 
+		</div>
+
+		<ul class="nav-links">
+		  <li><a href="MainPage.html"><i class="fas fa-home">Home</i></a></li>
+		  <li><a href="store.html"><i class="fas fa-tshirt">Products</i></a></li>
+		  <li><a href="quiz.html"><i class="fas fa-child">Quiz</a></i></li>
+		  <li><a href="gallery.html"><i class="fas fa-image">Gallery</i></a></li>
+		  <li><a href="feedback.html">Feedback</i></a></li>
+		  <li><a href="sitemap.html">Sitemap</a></li>
+		  <li><a href="about_us.html">About</a></li>
+		  
+		</ul>
+	</div>
+	</header>
+	<main>
+		<script>
+			function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+			function valform(){
+			var name = document.newform.name.value;
+			var email = document.newform.email.value;
+			var comment = document.newform.comment.value;
+			var rate = document.newform.rate.value;
+
+
+			if (name==""){
+			alert("Please enter your name");
+			return false;
+			}
+			else if (email==""){
+			alert("Please enter your email");
+			return false;
+			}
+			else if (comment==""){
+			alert("Please leave a comment");
+			return false;
+			}
+			else if (rate==""){
+			alert("Please leave a Rating");
+			return false;
+			}
+			else{
+				alert("Dear "+name+" ,Thank you very much for your feedback.You have rated our site as "+rate+" and your comment was "+comment);
+				}
+			}
+	</script>
+
+
+
+	<div class="container">
+		<div class="header">
+		<h2>Give us your Feedback</h2>
+	</div>
+	<form name="newform"id="form" class="form" method="post">
+			<div class="form-control">
+
+				<label for="fname">First Name</label>
+	  			<input type="text" id="fname" name="name">
+	  		</div>
+	  		<div class="form-control">
+	  			<label for="email">Email</label>
+	  			<input type="text" id="email" name="email">
+	  		</div>
+			
+			<div class="form-control">
+					<label for="comment">Any Comments?</label>
+					<input type="text" class="section" name="comment">
+			</div>
+				<p><b>Please rate our website</b><p><br>
+			<div class="button">
+				<div class="b">
+							<input type="radio" class="radio" name="rate" value="Poor" id="1"/>
+							<label for="1">Poor </label> &nbsp; &nbsp;
+							<input type="radio" class="radio" name="rate" value="Average" id="2"/>
+							<label for="2">Average </label> &nbsp; &nbsp;
+							<input type="radio" class="radio" name="rate" value="Good" id="3"/>
+							<label for="3">Good </label> &nbsp; &nbsp;
+							<input type="radio" class="radio" name="rate" value="Excellent" id="4"/>
+							<label for="4">Excellent </label>
+				</div>
+			</div>
+			<div class="btn">
+				<button class="button1" onclick="valform();">Submit</button>
+			</div>
+		</form>
+	</div>
+		
+	</main>
+
+	<div class="footer">
+            <div class="footer-content">
+            <div class="footer-section abt">
+                <div class="logo">
+					<h1 style="text-align: center;" id="footer-head">LUCID TRAVEL</h1> 
+				</div>
+				
+                <p id="footer-text">Copyright © 2020 Digital AG,<br> All rights reserved.<br>
+                DNHL® is a trademark owned by a Group with its headquarters at 
+				Mill Street, Colombo, SE1 2BA, Sri Lanka. This site is owned by DNHL.
+				</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+
+                <ul>
+                    <a class="flinks" href="MainPage.html"><li>Home</li></a>
+                    <a class="flinks" href="store.html"><li>Products</li></a>
+                    <a class="flinks" href="quiz.html"><li>Quiz</li></a>
+                    <a class="flinks" href="gallery.html"><li>Gallery</li></a>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h4>More</h4>
+                <ul>
+					<a class="flinks" href="about_us.html"><li>About us</li></a>
+                    <a class="flinks" href="feedback.html"><li>Feedback</li></a>
+                    <a class="flinks" href="sitemap.html"><li>Site Map</li></a>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h4>Our Socials</h4>
+
+                <ul>
+                    <a class="flinks" href="https://www.facebook.com/"><li><i class="fab fa-facebook-square"> Facebook</i></li></a>
+                    <a class="flinks" href="https://www.instagram.com/"><li><i class="fab fa-instagram"> Instagram</i></li></a>
+                    <a class="flinks" href="https://www.youtube.com/"><li><i class="fab fa-youtube"> YouTube</i></li></a>
+                    <a class="flinks" href="https://twitter.com/"><li><i class="fab fa-twitter"> Twitter</i></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footer-bottom-text">&copy; Lucid Travel.lk | Page Edited by<span id="page-editor" onclick="openNav()"> Nadil Padmaperuma</span></p>
+        </div>
+       </div>
+	<!--//footer-->
+	 <div id="myNav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+			<img src="../Images/s2_nadil.jpeg" alt="nadil"><br>
+			<h1 id="page-editor-name">Nadil Padmaperuma</h1><br>
+			<p id="page-editor-details"><b>Student No 2<br>
+			IIT ID: 2019632<br>
+			UoW ID: w1790148
+			</b></p>
+		  </div>
+		</div>
+		<a href="#"><button class="floating-btn1">Back to top  <i class="fas fa-angle-up"></i></button></a>
+
+</body>
+</html>
