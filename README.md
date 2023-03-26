@@ -1,16 +1,14 @@
 # lucid-travel
-# lucid-travel
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Sri Lankan Travel Destinations Web Project</title>
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
       <header>
-         <h1>Sri Lankan Travel Destinations Web Project</h1>
+         <h1>Lucid Travel</h1>
       </header>
       <main>
          <h2>About</h2>
